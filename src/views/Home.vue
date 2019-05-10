@@ -35,7 +35,6 @@ export default {
   methods: {
     fetchData() {
       Api.get('union').then(response => {
-        console.log(response.data)
         this.title = response.data.title
         this.description = response.data.description
         this.coverImageURL = response.data.cover_image_url
